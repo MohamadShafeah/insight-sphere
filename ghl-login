@@ -1,0 +1,276 @@
+/* ========================
+   General Layout & Structure
+   ======================== */
+.hl_login--body .container-fluid > div {
+    width: 80%;
+}
+
+section[class~=hl_login] [class~=hl_login--body] [class~=card] [class~=card-body] {
+    display: block;
+}
+
+[class~=hl_login--body] [class~=container-fluid]:after,
+[class~=hl_login--body] [class~=card],
+[class~=hl_login--body] [class~=container-fluid] {
+    display: flex;
+}
+
+/* ========================
+   Root Variables
+   ======================== */
+:root {
+    --bodybgcolor: #fff;
+    --login-btn-color: #000000;
+    --login-btn-hover: #202020;
+    --login-button-background-color: #000000;
+    --login-button-background-hover-color: #202020;
+    --login-button-text-color: #ffffff;
+    --login-button-font-weight: 500;
+    --login-input-background-color: #efefef;
+    --login-link-color: #42a5f5;
+    --login-header-text-color: #202020;
+    --login-main-background-url: url("https://mediashield.net/wp-content/uploads/2022/07/ms-loginscreen-bg.jpg");
+    --login-tagline: "Welcome back to Insight Sphere! Please enter your details.";
+    --footnote-tagline: "Welcome back to Insight Sphere! Please enter your details.";
+}
+
+/* ========================
+   Button Styles
+   ======================== */
+[class~=hl_login] [class~=btn][class~=btn-blue]:active,
+[class~=hl_login] [class~=btn][class~=btn-blue] {
+    background-color: var(--login-btn-color);
+    border-left-color: var(--login-btn-color);
+    border-bottom-color: var(--login-btn-color);
+    border-right-color: var(--login-btn-color);
+    border-top-color: var(--login-btn-color);
+    color: #fff;
+    transition: 0.3s ease-in;
+}
+
+[class~=hl_login] [class~=btn][class~=btn-blue]:focus {
+    background-color: var(--login-btn-color);
+    border-left-color: var(--login-btn-color);
+    border-bottom-color: var(--login-btn-color);
+    border-right-color: var(--login-btn-color);
+    border-top-color: var(--login-btn-color);
+}
+
+[class~=hl_login] [class~=btn][class~=btn-blue]:hover {
+    background-color: var(--login-btn-hover);
+    border-left-color: var(--login-btn-hover);
+    border-bottom-color: var(--login-btn-hover);
+    border-right-color: var(--login-btn-hover);
+    border-top-color: var(--login-btn-hover);
+}
+
+/* ========================
+   Form Group & Button Holder
+   ======================== */
+[class~=hl_login] [class~=button-holder][class~=form-group] {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 0.104166667in !important;
+    margin-top: 0.104166667in !important;
+}
+
+section[class~=hl_login] [class~=button-holder][class~=form-group] > div:not([class~=global-error]) {
+    transform: translate(0px, 75px);
+}
+
+/* ========================
+   Card & Container Styles
+   ======================== */
+[class~=hl_login--body] [class~=container-fluid] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+    text-align: right;
+    justify-content: space-between;
+}
+
+[class~=hl_login--body] [class~=container-fluid]:after {
+    content: "";
+    position: relative;
+    width: 100%;
+    max-width: 60%;
+    height: 100vh;
+    background-image: var(--login-main-background-url);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+[class~=hl_login--body] [class~=card] {
+    height: 100vh;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section[class~=hl_login] [class~=hl_login--body] [class~=card] [class~=card-body] {
+    padding-left: 0.625in;
+    padding-right: 0.625in;
+    padding-top: 0.625in;
+    padding-bottom: 0.625in;
+    width: 100% !important;
+    box-sizing: border-box;
+    text-align: left;
+    margin-top: 15vh;
+}
+
+/* ========================
+   Header Styles
+   ======================== */
+.hl_login--header {
+    position: absolute;
+    top: 10px;
+    width: 40%;
+    background: transparent !important;
+    z-index: 99;
+    margin-bottom: 0 !important;
+    border-bottom: none !important;
+}
+
+.hl_login--header .container-fluid a img {
+    max-width: 150px;
+    transform: translate(16.5vw, 10vh);
+}
+
+.hl_login--header .container-fluid a svg {
+    display: none;
+}
+
+/* ========================
+   Typography & Messaging
+   ======================== */
+section.hl_login .hl_login--body .login-card-heading:after {
+    content: var(--login-tagline);
+    opacity: 0.6;
+}
+
+section[class~=hl_login] p[class~=foot-note]:before {
+    content: var(--footnote-tagline) !important;
+    font-size: 0.125in;
+    display: block;
+}
+
+section[class~=hl_login] p[class~=foot-note] {
+    transform: translate(0px, -60px);
+}
+
+/* ========================
+   Form Control Styles
+   ======================== */
+.hl_login .form-control {
+    background: var(--login-input-background-color) !important;
+    border: 1px solid #bdbdbd !important;
+    border-radius: 3.75pt !important;
+    padding: 0.104166667in 7.5pt !important;
+    font-size: 0.875rem;
+}
+
+/* ========================
+   Responsive Design
+   ======================== */
+@media only screen and (min-width: 1441px) and (max-width: 1776px) {
+    .hl_login--header .container-fluid a img {
+        transform: translate(16.5vw, 10vh);
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .hl_login--header .container-fluid a img {
+        transform: translate(16.5vw, 10vh);
+    }
+}
+
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+    [class~=hl_login--body] [class~=container-fluid]::after {
+        height: auto;
+    }
+    [class~=hl_login--body] [class~=card] {
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    [class~=hl_login--body] [class~=card] {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    [class~=hl_login--header] [class~=container-fluid] a img {
+        transform: translate(44vw, 10vh);
+    }
+    [class~=hl_login--body] [class~=container-fluid]::after {
+        display: none;
+    }
+    [class~=hl_login--body] [class~=container-fluid] > div {
+        width: 100%;
+    }
+    [class~=hl_login--body] [class~=card] {
+        max-width: 100% !important;
+    }
+    [class~=hl_login--body] [class~=card] [class~=card-body] {
+        max-width: 90% !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    [class~=hl_login--body] [class~=card] [class~=card-body] {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        padding-top: 2.5pc !important;
+        padding-bottom: 2.5pc !important;
+    }
+    [class~=hl_login--header] [class~=container-fluid] a img {
+        transform: translate(44vw, 8vh);
+    }
+}
+
+@media only screen and (max-width: 563px) {
+    [class~=hl_login--header] [class~=container-fluid] a img {
+        transform: translate(40vw, 8vh);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    [class~=hl_login--body] [class~=card] [class~=card-body] {
+        padding-left: 0in !important;
+        padding-right: 0in !important;
+        padding-bottom: 0in !important;
+        padding-top: 45pt !important;
+    }
+    [class~=hl_login--header] [class~=container-fluid] a img {
+        transform: translate(40vw, 10vh);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    [class~=hl_login--header] [class~=container-fluid] a img {
+        transform: translate(37vw, 10vh);
+    }
+}
+
+/* ========================
+   Utility Overrides
+   ======================== */
+.hl_login .button-holder.form-group .hl_login button.hl-btn.justify-center.w-full.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.text-white:hover {
+    background-color: var(--login-button-background-hover-color) !important;
+}
+
+#app .undefined.flex.v2-open.sidebar-v2-agency section.hl_login .hl_login--body .container-fluid {
+    background-color: #ffffff;
+}
+
+#app .undefined.flex.v2-open.sidebar-v2-agency section.hl_login .hl_login--body .container-fluid .card .card-body .font-semibold.cursor-pointer.w-full.text-center.text-curious-blue-500 {
+    transform: translate(0px, -25px);
+}
