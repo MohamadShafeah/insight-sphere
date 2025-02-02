@@ -1,0 +1,76 @@
+:root {
+    --primary-gradient: linear-gradient(to right, #000428 0%, #004e92 100%);
+    --border-radius: 20px;
+    --text-color: #ffffff;
+    --bg-color: #ffffff;
+    --loginBtnColor: #2d3748;
+    --loginBtnHover: #30476e;
+    --bodyBgColor: #fff;
+    --login-button-background-color: #2d3748;
+    --login-button-background-hover-color: #30476e;
+    --login-button-text-color: #fff;
+}
+
+/* Common styles for headers */
+.dashboard-widget-module-custom .hl-card-header,
+#agency-dashboard-statistic-card .hl-statistic,
+.ReportsSpace .hl-card .hl-card-content,
+.ReportsSpace div .highcharts-root,
+#agencyDashboardApp .w-full .hl-card,
+#agency-dashboard-statistic-card,
+.crm-opportunities-status .dashboard-widget-module-custom .hl-card-header,
+.crm-opportunities-conversion-rate .dashboard-widget-module-custom .hl-card-header,
+.crm-opportunities-value .dashboard-widget-module-custom .hl-card-header,
+.crm-opportunities-funnel .dashboard-widget-module-custom .hl-card-header,
+.crm-opportunities-stages-distribution .dashboard-widget-module-custom .hl-card-header,
+.automations-attribution-lead-sources .dashboard-widget-module-custom .hl-card-header,
+.automations-reporting-google-analytics-count-report .dashboard-widget-module-custom .hl-card-header,
+.automations-reporting-google-analytics-chart-report .dashboard-widget-module-custom .hl-card-header,
+.automations-reporting-gmb-report .dashboard-widget-module-custom .hl-card-header,
+.automations-reporting-facebook-ads-report .dashboard-widget-module-custom .hl-card-header,
+.automations-reporting-google-ads-report .dashboard-widget-module-custom .hl-card-header,
+.crm-locations-tasks .dashboard-widget-module-custom .hl-card-header,
+.crm-conversations-manual-actions .dashboard-widget-module-custom .hl-card-header {
+    background-image: var(--primary-gradient);
+    border-radius: var(--border-radius);
+    color: var(--text-color) !important;
+}
+
+/* Common styles for content */
+#agency-dashboard-statistic-card .hl-icon-container,
+#agency-dashboard-statistic-card .hl-text-sm-medium,
+#agency-dashboard-statistic-card .hl-content,
+.ReportsSpace .font-medium,
+.crm-opportunities-value .truncate .hl-text-md-medium,
+.crm-opportunities-funnel .truncate .hl-text-md-medium,
+.crm-opportunities-conversion-rate .truncate .hl-text-md-medium,
+.crm-opportunities-status .truncate .hl-text-md-medium,
+.crm-opportunities-stages-distribution .truncate .hl-text-md-medium,
+.crm-locations-tasks .truncate .hl-text-md-medium,
+.crm-conversations-manual-actions .truncate .hl-text-md-medium,
+.automations-attribution-lead-sources .truncate .hl-text-md-medium,
+.automations-reporting-google-analytics-chart-report .truncate .hl-text-md-medium,
+.automations-reporting-gmb-report .truncate .hl-text-md-medium,
+.automations-reporting-facebook-ads-report .truncate .hl-text-md-medium,
+.automations-reporting-google-ads-report .truncate .hl-text-md-medium,
+#location-dashboard_div--opportunity-value-date-property-selector,
+#location-dashboard_div--conversion-rate-date-property-selector .focus\:outline-0,
+#location-dashboard_div--stage-distribution-date-property-selector .focus\:outline-0,
+#location-dashboard_div--funnel-date-property-date-property-selector .focus\:outline-0,
+#location-dashboard_div--opportunity-status-date-property-selector .focus\:outline-0,
+.location-dashboard_header .w-full .cursor-pointer,
+.location-dashboard_header .w-full .h-4 {
+    color: var(--text-color) !important;
+}
+
+/* Font medium */
+.ReportsSpace .hl-card .font-medium {
+    color: #ffffff !important;
+}
+
+/* Button styles */
+#navigation-btn,
+.location-dashboard_header .w-full .cursor-pointer {
+    background-color: var(--bg-color);
+    background-image: var(--primary-gradient);
+}
